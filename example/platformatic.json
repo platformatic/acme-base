@@ -1,5 +1,5 @@
 {
-  "$schema": "https://platformatic.dev/acme-base/schemas/1.json",
+  "$schema": "https://raw.githubusercontent.com/platformatic/acme-base/main/schemas/1.json",
   "module": "../index.js",
   "server": {
     "hostname": "{{HOSTNAME}}",
