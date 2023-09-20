@@ -5,7 +5,9 @@ import { lstat } from 'node:fs/promises'
 import { join } from 'node:path'
 
 export default async function acmeBase (app, opts) {
-  app.register(dynamite)
+  if (app.platformatic.config.dynamite) {
+    app.register(dynamite)
+  }
 
   await platformaticService(app, opts)
 }
