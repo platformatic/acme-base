@@ -1,5 +1,5 @@
 {
-  "$id": "https://platformatic.dev/acme-base/schemas/1.json",
+  "$id": "https://raw.githubusercontent.com/platformatic/acme-base/main/schemas/1.json",
   "title": "Acme Base",
   "type": "object",
   "properties": {
@@ -1009,10 +1009,6 @@
             "$ref": "#/$defs/callbacks-or-reference"
           }
         },
-        "deprecated": {
-          "default": false,
-          "type": "boolean"
-        },
         "security": {
           "type": "array",
           "items": {
@@ -1063,10 +1059,6 @@
           "type": "string"
         },
         "required": {
-          "default": false,
-          "type": "boolean"
-        },
-        "deprecated": {
           "default": false,
           "type": "boolean"
         },
@@ -1427,10 +1419,6 @@
           "type": "string"
         },
         "required": {
-          "default": false,
-          "type": "boolean"
-        },
-        "deprecated": {
           "default": false,
           "type": "boolean"
         },
