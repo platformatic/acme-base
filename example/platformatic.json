@@ -1,0 +1,11 @@
+{
+  "$schema": "https://platformatic.dev/acme-base/schemas/1.json",
+  "module": "../index.js",
+  "server": {
+    "hostname": "{{HOSTNAME}}",
+    "port": "{{PORT}}"
+  },
+  "dynamite": true,
+  "watch": "{{WATCH}}"
+}
+
