@@ -74,5 +74,18 @@ acmeBase.configManagerConfig = {
     this.current.plugins = {
       paths
     }
+
+    if (!this.current.server?.openapi) {
+      if (typeof this.current.service !== 'object') {
+        this.current.service = {}
+      }
+      this.current.service.openapi = {
+        info: {
+          title: 'Acme Microservice',
+          description: 'A microservice for Acme Inc.',
+          version: '1.0.0'
+        }
+      }
+    }
   }
 }
